@@ -293,14 +293,14 @@ body {
     max-height: 200px;
     max-width: 100%; }
 
-.boton {
+.boton--formulario {
   width: 100%;
   background: #FEFBE7;
   padding: 19px;
   margin-bottom: 10px;
   color: black; }
 
-.boton:hover {
+.boton--formulario:hover {
   cursor: pointer;
   background-color: #63a8b8; }
 
