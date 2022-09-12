@@ -1,0 +1,59 @@
+[
+    {
+    "descripcion": "Las más impresionantes playas te esperan en el Caribe. En Buenos Viajes te ofrecemos los mejores paquetes al Caribe para que disfrutes de estos maravillosos destinos sin gastar de más. Punta Cana te ofrece paisajes de postal y las mejores comidas para disfrutar solo, en pareja o con toda la familia.",
+    "fecha": "10 agosto",
+    "id": 0,
+    "imgSrc": "./imagenes/caribe.png",
+    "lugares": 20,
+    "nombre": "Caribe",
+    "precio": 300000
+    },
+    {
+    "descripcion": "¿Qué te parecería conocer Italia a un bajo precio y pagando el vuelo y los hoteles? Los paquetes a Roma te permitirán organizar tu viaje de manera rápida, en un combo perfecto para tener la mejor de las experiencias. De esta manera podrás, además de ahorrar tu dinero tambien podras divertirte.",
+    "fecha": "29 agosto",
+    "id": 1,
+     "imgSrc": "./imagenes/roma.png",
+    "lugares": 35,
+    "nombre": "Roma",
+    "precio": 380000
+    },
+    {
+    "descripcion": "París es considerada una de las ciudades más bellas de Europa. que mejor aúnan el romanticismo,  el arte, la cultura y los monumentos. Descubra todo lo que puede ofrecer París, la Ciudad del Amor y de la Luz. Recibe a todos los viajeros con su belleza única debido a su unica.",
+    "fecha": "10 septiembre",
+    "id": 2,
+    "imgSrc": "./imagenes/paris.png",
+    "lugares": 40,
+    "nombre": "Paris",
+    "precio": 270000
+    },
+    {
+    "descripcion": "Los paquetes a Berlín que buscás para tus viajes, te esperan en Buenos Viajes. No dejés pasar un minuto más, comprá ya mismo tu paquete turístico BARATO y pasá unos días fantásticos en Berlín. Con nuestros PAQUETES TURÍSTICOS todo lo que estabas buscando para tus vacaciones está en un solo lugar.",
+    "fecha": "15 octubre",
+    "id": 3,
+    "imgSrc": "./imagenes/berlin.png",
+    "lugares": 23,
+    "nombre": "Berlin",
+    "precio": 420000
+    },
+    {
+    "descripcion": "Los paquetes a Rusia que buscás para tus viajes, te esperan en Buenos Viajes. No dejés pasar un minuto más, comprá ya mismo tu paquete turístico BARATO y pasá unos días fantásticos en Berlín. Con nuestros PAQUETES TURÍSTICOS todo lo que estabas buscando para tus vacaciones está en un solo lugar.",
+    "fecha": "15 diciembre",
+    "id": 4,
+    "imgSrc": "./imagenes/moscu.png",
+    "lugares": 5,
+    "nombre": "Rusia",
+    "precio": 500000
+    },
+    {
+    "descripcion": "Los paquetes a Londres que buscás para tus viajes, te esperan en Buenos Viajes. No dejés pasar un minuto más, comprá ya mismo tu paquete turístico BARATO y pasá unos días fantásticos en Berlín. Con nuestros PAQUETES TURÍSTICOS todo lo que estabas buscando para tus vacaciones está en un solo lugar.",
+    "fecha": "31 diciembre",
+    "id": 5,
+    "imgSrc": "./imagenes/Londres.png",
+    "lugares": 10,
+    "nombre": "Londres",
+    "precio": 700000
+    }
+]
+
+
+

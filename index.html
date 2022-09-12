@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buenos Viajes es la empresa de viajes economicos mas confiable de el mercado, 5% de descuento por compras via web">
+    <title>Buenos Viajes, Viajes economicos y seguros pensados para vos.</title>
+    <meta name="keywords" content="Viajes, Viajes economicos, Viajes en descuento, pack de viaje, paquete de viajes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="shorcut icon" href="./imagenes/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+        <div class="nav--container">
+            <div class="logo--container">    
+                <a href="../index.html"><img class="logo1" src="imagenes/logo.png" alt="Logo"></a>
+            </div>
+            <label for="menu" class="nav--label">
+                <img src="assets/menu.svg" alt="Menu" class="nav--img">
+            </label>
+            
+            <input type="checkbox" id="menu" class="nav--input">
+            
+            <div class="nav--menu"> 
+                <a href="index.html" class="nav--item">Viajes</a>
+                <a href="pages/nosotros.html" class="nav--item">Nosotros</a>
+                <a href="pages/contacto.html" class="nav--item">Contacto</a>
+            </div>
+
+        </div>
+    </nav>
+    </header>
+    <main>
+        <h1 class="seccion--titulo">Viajes</h1>
+        <input type="text" id="filtro" class="filtro" onkeyup= "buscarProducto()" placeholder="Busque su proximo viaje">
+        <section class="productos">
+            <!--Productos -->
+            
+
+            
+
+        </section>
+        <section class="px-4 py-5 w-100" style="background-color: #f7c863; border-radius: .5rem .5rem 0 0;">
+            <style>
+              .card {
+                position: initial;
+              }
+
+              .card-registration .select-input.form-control[readonly]:not([disabled]) {
+                font-size: 1rem;
+                line-height: 2.15;
+                padding-left: .75em;
+                padding-right: .75em;
+              }
+      
+              .card-registration .select-arrow {
+                top: 13px;
+              }
+      
+              .bg-grey {
+                background-color: #eae8e8;
+              }
+      
+              @media (min-width: 992px) {
+                .card-registration-2 .bg-grey {
+                  border-top-right-radius: 16px;
+                  border-bottom-right-radius: 16px;
+                }
+              }
+      
+              @media (max-width: 991px) {
+                .card-registration-2 .bg-grey {
+                  border-bottom-left-radius: 16px;
+                  border-bottom-right-radius: 16px;
+                }
+              }
+            </style>
+            <div class="row">
+              <div class="col-12">
+                <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                  <div class="card-body p-0">
+                    <div class="row g-0">
+                      <div class="col-lg-8">
+                        <div class="p-5">
+                          <div class="d-flex justify-content-between align-items-center mb-5">
+                            <h1 class="fw-bold mb-0 text-black">Carrito</h1>
+                          </div>
+                        <div class="productosCarrito"> 
+
+                        </div>
+                          <hr class="my-4">
+
+                        </div>
+                      </div>
+                      <div class="col-lg-4 bg-grey" style="display:flex; flex-direction: column; justify-content:space-between;">
+                        <div class="p-5" class="total">
+                          <h3 class="fw-bold mb-5 mt-2 pt-1">Resumen</h3>
+                          <hr class="my-4">
+      
+                          <div class="total">
+                            <h3>Precio Total: $  (Items: )</h4>
+                          </div>
+                          </div>
+                          <div style="display: flex; justify-content:space-between;">
+                          <button type="button" class="btn btn-dark btn-block btn-lg boton--vaciado" data-mdb-ripple-color="dark">Vaciar carrito</button>
+                          <button type="button" class="btn btn-dark btn-block btn-lg boton--compra" data-mdb-ripple-color="dark">Comprar</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </main>
+    <footer class="footer">
+        <div class="footer--mediosDePago">
+            <!--Imagenes de medios de pago-->
+            <img src="./imagenes/pagos/mastercard.png" alt="Master Card">
+            <img src="./imagenes/pagos/americanexpress.png" alt="American express">
+            <img src="./imagenes/pagos/visa.png" alt="Visa">
+            <img src="./imagenes/pagos/maestro.png" alt="Maestro">
+        </div>
+
+        <!--Imagenes redes socials-->
+        <div class="redes--sociales">
+            <a href="https://www.instagram.com/"><img src="./imagenes/rrss/instagram.png" alt="Logo Instagram"> </a>
+            <a href="https://www.facebook.com/"><img src="./imagenes/rrss/facebook.png" alt="Logo Facebook"> </a>
+            <a href="https://www.twitter.com/"><img src="./imagenes/rrss/twitter.png" alt="Logo Twitter"> </a>
+
+        </div>
+
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="elementos.js"></script>
+    <script src="carrito.js"></script>
+    <script src="buscador.js"></script>
+</body>
+
+</html>

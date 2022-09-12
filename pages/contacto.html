@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="shorcut icon" href="../imagenes/favicon.png">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+        <div class="nav--container">
+            <div class="logo--container">    
+                <a href="../index.html"><img class="logo1" src="../imagenes/logo.png" alt="Logo"></a>
+            </div>
+            <label for="menu" class="nav--label">
+                <img src="../assets/menu.svg" alt="Menu" class="nav--img">
+            </label>
+            
+            <input type="checkbox" id="menu" class="nav--input">
+            
+            <div class="nav--menu"> 
+                <a href="../index.html" class="nav--item">Viajes</a>
+                <a href="nosotros.html" class="nav--item">Nosotros</a>
+                <a href="contacto.html" class="nav--item">Contacto</a>
+            </div>
+
+        </div>
+    </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="seccion--titulo">Contacto</h1>
+            <!--Imagen tematica de viajes-->
+
+            <p class="texto--contacto">Contactá con nosotros si tenes alguna consulta o si querés acceder a algunos de nuestros paquetes.</p>
+
+            <div class="contenedor--mediosContacto">
+                <p> <strong>Email:</strong> buenosviajes@gmai.com</p>
+                <p> <strong>Whatsapp:</strong> +54 11 2345-4060</p>
+                <p> <strong>Direccion:</strong> Cochabamba 420</p>
+            </div>
+                
+                <div class="formulario">
+                    <form action="https://formspree.io/f/mknyqqvj" method="POST">
+                        <h3>Contactanos</h3>
+                        <input class="controles" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre"
+                            required>
+                        <input class="controles" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido"
+                            required>
+                        <input class="controles" type="email" name="correo" id="correo" placeholder="Ingrese su Correo"
+                            required>
+                        <textarea name="Comentarios" placeholder="Comentarios" id="Comentarios"></textarea>
+                        <input class="boton" type="submit" value="Enviar">
+                    </form>
+                </div>
+            
+        </section>
+    </main>
+    <footer class="footer--nosotros--contacto">
+        <div class="footer--mediosDePago">
+            <!--Imagenes de medios de pago-->
+            <img src="../imagenes/pagos/mastercard.png" alt="Master Card">
+            <img src="../imagenes/pagos/americanexpress.png" alt="American express">
+            <img src="../imagenes/pagos/visa.png" alt="Visa">
+            <img src="../imagenes/pagos/maestro.png" alt="Maestro">
+        </div>
+
+        <!--Imagenes redes socials-->
+        <div class="redes--sociales">
+            <a href="https://www.instagram.com/"><img src="../imagenes/rrss/instagram.png" alt="Logo Instagram"> </a>
+            <a href="https://www.facebook.com/"><img src="../imagenes/rrss/facebook.png" alt="Logo Facebook"> </a>
+            <a href="https://www.twitter.com/"><img src="../imagenes/rrss/twitter.png" alt="Logo Twitter"> </a>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

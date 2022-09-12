@@ -1,0 +1,373 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: #FEFBE7;
+  margin: 2px; }
+
+/*header */
+.logo--container {
+  max-width: 200px; }
+
+.nav {
+  height: 80px; }
+
+.nav--container {
+  display: flex;
+  height: 100%;
+  width: 98%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px; }
+
+.nav--label, .nav--input {
+  display: none; }
+
+.nav--menu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3em; }
+
+.nav--item {
+  color: black;
+  text-decoration: none;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%); }
+
+.nav--item::after {
+  content: "";
+  display: block;
+  background: black;
+  width: 90%;
+  margin-top: 3px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path .3s; }
+
+.nav--item:hover {
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+
+/*main general*/
+.seccion--titulo {
+  background-color: #A0BCC2;
+  text-align: center;
+  font-size: 30px; }
+
+/*main index*/
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5px;
+  row-gap: 5px;
+  justify-content: center;
+  margin: 10%; }
+
+.seccionEncuadrado--grande {
+  width: 600px;
+  background-color: #A0BCC2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  height: 500px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 15px; }
+
+.seccionEncuadrado--mediano {
+  width: 270px;
+  background-color: #A0BCC2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  height: 500px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 15px; }
+
+.seccionEncuadrado--chico {
+  width: 120px;
+  background-color: #A0BCC2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  height: 500px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 15px; }
+
+.seccionEncuadrado--mediano h4 {
+  background-color: #DAE5D0;
+  color: black;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 10px 40px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: small; }
+
+.seccionEncuadrado--mediano :active {
+  transform: translateY(2px); }
+
+.seccionEncuadrado--mediano:hover {
+  background-color: #63a8b8;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease; }
+
+.seccion--encuadradoImagen {
+  height: 170px;
+  margin-bottom: 15px;
+  border-radius: 15px 15px 0 0; }
+
+.imgEncuadrado {
+  object-fit: fill; }
+
+.img-1 {
+  background-image: url(../imagenes/caribe.png);
+  background-size: cover; }
+
+.img-2 {
+  background-image: url(../imagenes/roma.png);
+  background-size: cover; }
+
+.img-3 {
+  background-image: url(../imagenes/paris.png);
+  background-size: cover; }
+
+.img-4 {
+  background-image: url(../imagenes/berlin.png);
+  background-size: cover; }
+
+/*main nosotros*/
+.seccion--quienesSomos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 18%;
+  flex-direction: column; }
+
+.quienes--somos {
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #63a8b8; }
+
+.texto--quienesSomos {
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold; }
+
+/*main fechas y precios*/
+.tabla--precios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+.tarjeta--precio {
+  flex: 1;
+  max-width: 360px;
+  background-color: #A0BCC2;
+  margin: 20px 10px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  color: #2d2d2d;
+  transition: .3s linear; }
+
+.encabezado--tarjeta {
+  background-color: #63a8b8;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 20px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s linear; }
+
+.tarjeta--precio:hover .encabezado--tarjeta {
+  box-shadow: 0 0 0 26em #63a8b8; }
+
+.precio {
+  font-size: 70px;
+  color: #63a8b8;
+  margin: 40px 0;
+  transition: .2s linear; }
+
+.precio sup, .precio span {
+  font-size: 22px;
+  font-weight: 700; }
+
+.tarjeta--precio:hover, .tarjeta--precio:hover .precio {
+  color: #fff; }
+
+.tarjeta--precio li {
+  font-size: 16px;
+  padding: 10px 0;
+  text-transform: uppercase; }
+
+.boton-contactanos {
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  border: 2px solid #63a8b8;
+  color: #fefbe7;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear; }
+
+.boton-contactanos:hover {
+  background-color: #63a8b8;
+  color: #fff; }
+
+/*contactanos*/
+.texto--contacto {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center; }
+
+.contenedor--mediosContacto {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 90px;
+  justify-content: center; }
+  .contenedor--mediosContacto p {
+    margin-top: 0;
+    margin-bottom: 1rem; }
+  .contenedor--mediosContacto strong {
+    font-weight: bolder; }
+
+.formulario {
+  width: 450px;
+  margin: auto;
+  margin-bottom: 12%;
+  padding: 10px 20px;
+  background-color: #A0BCC2;
+  border-radius: 7px;
+  font-family: 'calibri'; }
+  .formulario h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 20px; }
+  .formulario .controles, .formulario textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    background: #FEFBE7;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black; }
+  .formulario textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%; }
+
+.boton {
+  width: 100%;
+  background: #FEFBE7;
+  padding: 19px;
+  margin-bottom: 10px;
+  color: black; }
+
+.boton:hover {
+  cursor: pointer;
+  background-color: #63a8b8; }
+
+form {
+  height: 100%;
+  width: 100%; }
+
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  background: #A0BCC2; }
+
+.footer--nosotros--contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #A0BCC2; }
+
+/*footer medios de pago*/
+.footer--mediosDePago {
+  padding: 0; }
+
+footer img {
+  height: 50px;
+  width: 50px; }
+
+.redes--sociales {
+  padding: 0; }
+  .redes--sociales img {
+    height: 40px;
+    width: 40px; }
+
+/*media querys*/
+@media (max-width: 700px) {
+  .nav--label {
+    display: block;
+    cursor: pointer; }
+  .nav--menu {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    background: #A0BCC2;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out; }
+  .nav--input:checked + .nav--menu {
+    clip-path: circle(100% at center); } }
+
+@media (max-width: 720px) {
+  /*formulario*/
+  .formulario {
+    width: 100%; } }
+
+@media (max-width: 1120px) {
+  .tarjeta--precio {
+    flex: 50%; }
+  .footer {
+    position: static; } }

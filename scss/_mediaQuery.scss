@@ -1,0 +1,52 @@
+ /*media querys*/
+ 
+ @media (max-width: 700px){
+    .nav--label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav--menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: #A0BCC2;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    .nav--input:checked + .nav--menu {
+        clip-path: circle(100% at center);
+    }
+
+
+}
+ 
+ 
+ @media (max-width: 720px) {
+
+    
+        /*formulario*/
+       .formulario {
+        width: 100%;
+       }
+        
+    }
+
+    @media (max-width: 1120px) {
+
+        .tarjeta--precio {
+            flex: 50%;
+        }
+        
+        .footer {
+             position: static;
+        }
+    }
+    
