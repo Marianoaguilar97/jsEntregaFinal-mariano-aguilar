@@ -10,7 +10,7 @@ function renderProductos () {
     viajes.forEach( (viaje) => {
         productosEl.innerHTML += ` 
         <div class="seccionEncuadrado--mediano">
-        <div class="seccion--encuadradoImagen" title="Caribe"><img src="${viaje.imgSrc}" alt=${viaje.nombre}" class="imgEncuadrado"></div>
+        <div class="seccion--encuadradoImagen" title="${viaje.nombre}"><img src="${viaje.imgSrc}" alt=${viaje.nombre}" class="imgEncuadrado"></div>
         <h2>${viaje.nombre}</h2>
         <p>${viaje.fecha}</p>
         <p>${viaje.descripcion}
